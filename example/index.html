@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/gh/dev-yoonik/youverse-passwordless-web@latest/js/youverse.js"></script>
+</head>
+
+<body>
+  <div id="youverse"></div>
+
+  <script>
+    const success = (response) => {
+      console.log("Success ", response);
+    };
+
+    const error = (response) => {
+      console.log("Something went wrong");
+    };
+
+    const youverse = new Youverse("BASE_URL");
+
+    youverse.setSuccessFunction(success);
+    youverse.setErrorFunction(error);
+    youverse.start();
+  </script>
+</body>
+
+</html>
