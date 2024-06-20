@@ -49,7 +49,7 @@ class Youverse {
    loadDependencies() {
       let load = document.createElement("script");
       load.type = "text/javascript";
-      load.setAttribute("src", "./js/dist/app.js");
+      load.setAttribute("src", "https://cdn.jsdelivr.net/gh/dev-yoonik/youverse-passwordless-web@latest/js/dist/app.js");
       document.head.appendChild(load);
    }
 
